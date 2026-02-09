@@ -1,0 +1,1272 @@
+{
+	"info": {
+		"_postman_id": "60a24203-15ce-486f-97bf-15badc217079",
+		"name": "Proyecto final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45695960",
+		"_collection_link": "https://eskarlenht.postman.co/workspace/eskarlenht's-Workspace~284d3310-6de3-4efb-8aca-c0958207c0f5/collection/45695960-60a24203-15ce-486f-97bf-15badc217079?action=share&source=collection_link&creator=45695960"
+	},
+	"item": [
+		{
+			"name": "Ordenes",
+			"item": [
+				{
+					"name": "Crear nuevo pedido",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Eskarlenht\",\r\n    \"lastName\": \"Cuviellohnetis\",\r\n    \"address\": \"17th Street/Santa Monica College\",\r\n    \"metroStation\": 18,\r\n    \"phone\": \"+7 800 355 35 35\",\r\n    \"rentTime\": 20,\r\n    \"deliveryDate\": \"2025-09-07\",\r\n    \"comment\": \"Entregar a la puerta roja\",\r\n    \"color\": [\r\n        \"BLACK\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_pyfinal}}api/v1/orders",
+							"host": [
+								"{{url_pyfinal}}api"
+							],
+							"path": [
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo pedido Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"martina\",\r\n    \"lastName\": \"camaleon\",\r\n    \"address\": \"Calle Duarte no.6 Monte Plata, RD\",\r\n    \"metroStation\": 4,\r\n    \"phone\": \"+7 800 355 35 35\",\r\n    \"rentTime\": 5,\r\n    \"deliveryDate\": \"2025-12-04\",\r\n    \"comment\": \"Entregar a la puerta roja\",\r\n    \"color\": [\r\n        \"BLACK\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_pyfinal}}api/v1/orders",
+							"host": [
+								"{{url_pyfinal}}api"
+							],
+							"path": [
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo pedido Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Rosa\",\r\n    \"lastName\": \"martinez\",\r\n    \"address\": \"Calle Duarte no.6 Monte Plata, RD\",\r\n    \"metroStation\": 4,\r\n    \"phone\": \"+7 800 355 35 35\",\r\n    \"rentTime\": 5,\r\n    \"deliveryDate\": \"2025-12-10\",\r\n    \"comment\": \"Entregar a la puerta roja\",\r\n    \"color\": [\r\n        \"BLACK\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_pyfinal}}api/v1/orders",
+							"host": [
+								"{{url_pyfinal}}api"
+							],
+							"path": [
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear nuevo pedido Copy 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Rosa\",\r\n    \"lastName\": \"martinez\",\r\n    \"address\": \"Calle Duarte no.6 Monte Plata, RD\",\r\n    \"metroStation\": 4,\r\n    \"phone\": \"+7 800 355 35 35\",\r\n    \"rentTime\": 5,\r\n    \"deliveryDate\": \"2025-12-10\",\r\n    \"comment\": \"Entregar a la puerta roja\",\r\n    \"color\": [\r\n        \"BLACK\"\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_pyfinal}}api/v1/orders",
+							"host": [
+								"{{url_pyfinal}}api"
+							],
+							"path": [
+								"v1",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Aceptar un pedido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url_pyfinal}}api/v1/orders/accept/5?courierId=2",
+							"host": [
+								"{{url_pyfinal}}api"
+							],
+							"path": [
+								"v1",
+								"orders",
+								"accept",
+								"5"
+							],
+							"query": [
+								{
+									"key": "courierId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Completar el pedido",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{url_pyfinal}}api/v1/orders/finish/:id",
+							"host": [
+								"{{url_pyfinal}}api"
+							],
+							"path": [
+								"v1",
+								"orders",
+								"finish",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Busqueda de estacion de metro",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url_pyfinal}}api/v1/stations/search",
+							"host": [
+								"{{url_pyfinal}}api"
+							],
+							"path": [
+								"v1",
+								"stations",
+								"search"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Courrier",
+			"item": [
+				{
+					"name": "repartidores positivos",
+					"item": [
+						{
+							"name": "crear un repartidor en otro idioma Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Juan\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"Roberto\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "campo login",
+					"item": [
+						{
+							"name": "crear un repartidor en otro idioma",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"丁目十二番地\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Introducir letras latinas con una longitud de 1 caracter",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"N\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nombre con 11 caracteres",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Mauriciotes\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "caracteres especiales",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"_)(*&^?>\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "campo duplicado",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Azul\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "numeros",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"56478\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "vacio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Azul\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "letras vacias mas un espacio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Marta Ross\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "solo espacios",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Marta Ross\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "letras mas guion",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Marta-Ross\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "letras mas numeros",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Marta12\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"juerario\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "firstname",
+					"item": [
+						{
+							"name": "vacio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Milagr\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "11 caracteres",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Lore\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"Isabelletas\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "otro idioma Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Mart\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"丁目十\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "caract especiales",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Jorge\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"()*&\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "numeros",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"george\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "repartidor duplicado",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"george\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "letras + espacio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"george\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"1234\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "solo espacios",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Alison\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"     \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "latinas mas numeros",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Alison\",\r\n    \"password\": \"1234\",\r\n    \"firstName\": \"     \"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "password",
+					"item": [
+						{
+							"name": "numeros  mas letras",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Rosmo\",\r\n    \"password\": \"1987 \",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "letras",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"cosmo\",\r\n    \"password\": \"maravilla\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "numeros  mas espacio",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Rosmo\",\r\n    \"password\": \"198\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "3 numeros",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"Rosmo\",\r\n    \"password\": \"198\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "5 numeros",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"RAUL\",\r\n    \"password\": \"19878\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "especiales",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"RAUL\",\r\n    \"password\": \")(*_\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "num. y letras",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"ale\",\r\n    \"password\": \"45tres\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "nume. mas guion",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"ale\",\r\n    \"password\": \"45tres\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "decimales",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"leidan\",\r\n    \"password\": \"1.89\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "numero con +",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"leidan\",\r\n    \"password\": \"1.89\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "numero con -",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"login\": \"leidan\",\r\n    \"password\": \"1.89\",\r\n    \"firstName\": \"Alicia\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "eliminar",
+					"item": [
+						{
+							"name": "eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n"
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier/:id",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "eliminar",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "\r\n"
+										},
+										"url": {
+											"raw": "{{url_pyfinal}}api/v1/courier/:id",
+											"host": [
+												"{{url_pyfinal}}api"
+											],
+											"path": [
+												"v1",
+												"courier",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": ""
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": null,
+									"header": [
+										{
+											"key": "Date",
+											"value": "Sun, 21 Dec 2025 03:22:03 GMT"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Content-Length",
+											"value": "57"
+										},
+										{
+											"key": "Connection",
+											"value": "keep-alive"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										},
+										{
+											"key": "Content-Language",
+											"value": "en"
+										},
+										{
+											"key": "Content-Security-Policy",
+											"value": "frame-ancestors *"
+										},
+										{
+											"key": "Etag",
+											"value": "W/\"39-dX64q+MEIyJvrH7RxnVUv5CQk+g\""
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "Express"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"code\": 404,\n    \"message\": \"There's no courier with this ID.\"\n}"
+								}
+							]
+						},
+						{
+							"name": "eliminar RPR ACEPTO PEDIDO",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "\r\n"
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/courier/:id",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"courier",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "TRACK NUMBER",
+					"item": [
+						{
+							"name": "NUM. SEG. NO EXISTE",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url_pyfinal}}api/v1/orders/track?T=703424",
+									"host": [
+										"{{url_pyfinal}}api"
+									],
+									"path": [
+										"v1",
+										"orders",
+										"track"
+									],
+									"query": [
+										{
+											"key": "T",
+											"value": "703424"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}
